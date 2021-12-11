@@ -3,4 +3,5 @@
 - SVV-System Verilog<br>
 - WMC-Wireless Mobile Communication<br>
 - ASIC-Application Specific Integrated Circuit<br>
+- ML-Introduction to Machine Learning<br>
 - ADC Lab-Advanced Digital Communication Lab<br>
