@@ -1,5 +1,5 @@
 ## Bus Arbiter
-Arbitration is a scheduling scheme which gives to each requestor its share of using a common resource for a limited time or data elements.<br>
+A bus arbiter is a device used in a multi-master bus system to decide which bus master will be allowed to control the bus for each bus cycle.Arbitration is a scheduling scheme which gives to each requestor its share of using a common resource for a limited time or data elements.<br>
 <h3>Arbiter</h3>
 
 ![Arbiter](arbiter.png)<br>
