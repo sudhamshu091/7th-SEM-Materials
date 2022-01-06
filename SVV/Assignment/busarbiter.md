@@ -6,6 +6,9 @@ Arbitration is a scheduling scheme which gives to each requestor its share of us
 <h3>Block Diagram</h3>
 
 ![Block Diagram](bd.jpg)<br>
+
+[Code](busarbiter.v)<br>
+[Testbench](busarbiter_tb.v)<br>
 <h3>Output</h3>
 
 ![Output](output.png)<br>
