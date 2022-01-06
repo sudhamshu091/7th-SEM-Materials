@@ -1,19 +1,14 @@
 module busarbiter (req0,req1,req2,req3,gnt0,gnt1,gnt2,gnt3,rst,clk);
   input wire req0,req1,req2,req3,rst,clk;
   output reg gnt0,gnt1,gnt2,gnt3;
-  
   reg [2:0] state;
-  reg [2:0] nxt_state;
-  
+  reg [2:0] nxt_state; 
   //defining types of states required
-  
   parameter [2:0] IDLE=000,    
                   REQ0=001,
                   REQ1=010,
                   REQ2=011,
-                  REQ3=100;
-                  
-                  
+                  REQ3=100;         
     always@(posedge clk)  //for transition of states
   begin
   if(rst)
@@ -21,13 +16,10 @@ module busarbiter (req0,req1,req2,req3,gnt0,gnt1,gnt2,gnt3,rst,clk);
   else
    state <= nxt_state;
   end 
-
 always@(state,req0,req1,req2,req3) // conditions for states
 begin
   case(state)
-   
- IDLE:begin
-             
+ IDLE:begin  
         case({req0,req1,req2,req3})
            4'b0000:nxt_state=IDLE;
            4'b0001:nxt_state=REQ3;
